@@ -13,6 +13,8 @@ Add `eltanvir_util` to your `pubspec.yaml`:
 ```yaml
 dependencies:
   eltanvir_util:
+    git:
+      url: https://github.com/ElTanvir/eltanvir_util.git
 ```
 
 Install it:
