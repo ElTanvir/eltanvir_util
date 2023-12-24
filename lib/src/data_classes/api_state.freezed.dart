@@ -75,20 +75,20 @@ class _$APIStateCopyWithImpl<T, $Res, $Val extends APIState<T>>
 }
 
 /// @nodoc
-abstract class _$$_APIStateloadedCopyWith<T, $Res> {
-  factory _$$_APIStateloadedCopyWith(_$_APIStateloaded<T> value,
-          $Res Function(_$_APIStateloaded<T>) then) =
-      __$$_APIStateloadedCopyWithImpl<T, $Res>;
+abstract class _$$APIStateloadedImplCopyWith<T, $Res> {
+  factory _$$APIStateloadedImplCopyWith(_$APIStateloadedImpl<T> value,
+          $Res Function(_$APIStateloadedImpl<T>) then) =
+      __$$APIStateloadedImplCopyWithImpl<T, $Res>;
   @useResult
   $Res call({T data});
 }
 
 /// @nodoc
-class __$$_APIStateloadedCopyWithImpl<T, $Res>
-    extends _$APIStateCopyWithImpl<T, $Res, _$_APIStateloaded<T>>
-    implements _$$_APIStateloadedCopyWith<T, $Res> {
-  __$$_APIStateloadedCopyWithImpl(
-      _$_APIStateloaded<T> _value, $Res Function(_$_APIStateloaded<T>) _then)
+class __$$APIStateloadedImplCopyWithImpl<T, $Res>
+    extends _$APIStateCopyWithImpl<T, $Res, _$APIStateloadedImpl<T>>
+    implements _$$APIStateloadedImplCopyWith<T, $Res> {
+  __$$APIStateloadedImplCopyWithImpl(_$APIStateloadedImpl<T> _value,
+      $Res Function(_$APIStateloadedImpl<T>) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -96,7 +96,7 @@ class __$$_APIStateloadedCopyWithImpl<T, $Res>
   $Res call({
     Object? data = freezed,
   }) {
-    return _then(_$_APIStateloaded<T>(
+    return _then(_$APIStateloadedImpl<T>(
       data: freezed == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
@@ -107,8 +107,8 @@ class __$$_APIStateloadedCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$_APIStateloaded<T> implements _APIStateloaded<T> {
-  const _$_APIStateloaded({required this.data});
+class _$APIStateloadedImpl<T> implements _APIStateloaded<T> {
+  const _$APIStateloadedImpl({required this.data});
 
   @override
   final T data;
@@ -119,10 +119,10 @@ class _$_APIStateloaded<T> implements _APIStateloaded<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_APIStateloaded<T> &&
+            other is _$APIStateloadedImpl<T> &&
             const DeepCollectionEquality().equals(other.data, data));
   }
 
@@ -133,8 +133,8 @@ class _$_APIStateloaded<T> implements _APIStateloaded<T> {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_APIStateloadedCopyWith<T, _$_APIStateloaded<T>> get copyWith =>
-      __$$_APIStateloadedCopyWithImpl<T, _$_APIStateloaded<T>>(
+  _$$APIStateloadedImplCopyWith<T, _$APIStateloadedImpl<T>> get copyWith =>
+      __$$APIStateloadedImplCopyWithImpl<T, _$APIStateloadedImpl<T>>(
           this, _$identity);
 
   @override
@@ -201,29 +201,30 @@ class _$_APIStateloaded<T> implements _APIStateloaded<T> {
 }
 
 abstract class _APIStateloaded<T> implements APIState<T> {
-  const factory _APIStateloaded({required final T data}) = _$_APIStateloaded<T>;
+  const factory _APIStateloaded({required final T data}) =
+      _$APIStateloadedImpl<T>;
 
   T get data;
   @JsonKey(ignore: true)
-  _$$_APIStateloadedCopyWith<T, _$_APIStateloaded<T>> get copyWith =>
+  _$$APIStateloadedImplCopyWith<T, _$APIStateloadedImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_APIStateerrorCopyWith<T, $Res> {
-  factory _$$_APIStateerrorCopyWith(
-          _$_APIStateerror<T> value, $Res Function(_$_APIStateerror<T>) then) =
-      __$$_APIStateerrorCopyWithImpl<T, $Res>;
+abstract class _$$APIStateerrorImplCopyWith<T, $Res> {
+  factory _$$APIStateerrorImplCopyWith(_$APIStateerrorImpl<T> value,
+          $Res Function(_$APIStateerrorImpl<T>) then) =
+      __$$APIStateerrorImplCopyWithImpl<T, $Res>;
   @useResult
   $Res call({String error});
 }
 
 /// @nodoc
-class __$$_APIStateerrorCopyWithImpl<T, $Res>
-    extends _$APIStateCopyWithImpl<T, $Res, _$_APIStateerror<T>>
-    implements _$$_APIStateerrorCopyWith<T, $Res> {
-  __$$_APIStateerrorCopyWithImpl(
-      _$_APIStateerror<T> _value, $Res Function(_$_APIStateerror<T>) _then)
+class __$$APIStateerrorImplCopyWithImpl<T, $Res>
+    extends _$APIStateCopyWithImpl<T, $Res, _$APIStateerrorImpl<T>>
+    implements _$$APIStateerrorImplCopyWith<T, $Res> {
+  __$$APIStateerrorImplCopyWithImpl(_$APIStateerrorImpl<T> _value,
+      $Res Function(_$APIStateerrorImpl<T>) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -231,7 +232,7 @@ class __$$_APIStateerrorCopyWithImpl<T, $Res>
   $Res call({
     Object? error = null,
   }) {
-    return _then(_$_APIStateerror<T>(
+    return _then(_$APIStateerrorImpl<T>(
       error: null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
@@ -242,8 +243,8 @@ class __$$_APIStateerrorCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$_APIStateerror<T> implements _APIStateerror<T> {
-  const _$_APIStateerror({required this.error});
+class _$APIStateerrorImpl<T> implements _APIStateerror<T> {
+  const _$APIStateerrorImpl({required this.error});
 
   @override
   final String error;
@@ -254,10 +255,10 @@ class _$_APIStateerror<T> implements _APIStateerror<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_APIStateerror<T> &&
+            other is _$APIStateerrorImpl<T> &&
             (identical(other.error, error) || other.error == error));
   }
 
@@ -267,8 +268,9 @@ class _$_APIStateerror<T> implements _APIStateerror<T> {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_APIStateerrorCopyWith<T, _$_APIStateerror<T>> get copyWith =>
-      __$$_APIStateerrorCopyWithImpl<T, _$_APIStateerror<T>>(this, _$identity);
+  _$$APIStateerrorImplCopyWith<T, _$APIStateerrorImpl<T>> get copyWith =>
+      __$$APIStateerrorImplCopyWithImpl<T, _$APIStateerrorImpl<T>>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -335,10 +337,10 @@ class _$_APIStateerror<T> implements _APIStateerror<T> {
 
 abstract class _APIStateerror<T> implements APIState<T> {
   const factory _APIStateerror({required final String error}) =
-      _$_APIStateerror<T>;
+      _$APIStateerrorImpl<T>;
 
   String get error;
   @JsonKey(ignore: true)
-  _$$_APIStateerrorCopyWith<T, _$_APIStateerror<T>> get copyWith =>
+  _$$APIStateerrorImplCopyWith<T, _$APIStateerrorImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }

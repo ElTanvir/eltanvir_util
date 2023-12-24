@@ -87,25 +87,25 @@ class _$AsyncStateCopyWithImpl<T, $Res, $Val extends AsyncState<T>>
 }
 
 /// @nodoc
-abstract class _$$_AsyncStateinitialCopyWith<T, $Res> {
-  factory _$$_AsyncStateinitialCopyWith(_$_AsyncStateinitial<T> value,
-          $Res Function(_$_AsyncStateinitial<T>) then) =
-      __$$_AsyncStateinitialCopyWithImpl<T, $Res>;
+abstract class _$$AsyncStateinitialImplCopyWith<T, $Res> {
+  factory _$$AsyncStateinitialImplCopyWith(_$AsyncStateinitialImpl<T> value,
+          $Res Function(_$AsyncStateinitialImpl<T>) then) =
+      __$$AsyncStateinitialImplCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$$_AsyncStateinitialCopyWithImpl<T, $Res>
-    extends _$AsyncStateCopyWithImpl<T, $Res, _$_AsyncStateinitial<T>>
-    implements _$$_AsyncStateinitialCopyWith<T, $Res> {
-  __$$_AsyncStateinitialCopyWithImpl(_$_AsyncStateinitial<T> _value,
-      $Res Function(_$_AsyncStateinitial<T>) _then)
+class __$$AsyncStateinitialImplCopyWithImpl<T, $Res>
+    extends _$AsyncStateCopyWithImpl<T, $Res, _$AsyncStateinitialImpl<T>>
+    implements _$$AsyncStateinitialImplCopyWith<T, $Res> {
+  __$$AsyncStateinitialImplCopyWithImpl(_$AsyncStateinitialImpl<T> _value,
+      $Res Function(_$AsyncStateinitialImpl<T>) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_AsyncStateinitial<T> implements _AsyncStateinitial<T> {
-  const _$_AsyncStateinitial();
+class _$AsyncStateinitialImpl<T> implements _AsyncStateinitial<T> {
+  const _$AsyncStateinitialImpl();
 
   @override
   String toString() {
@@ -113,9 +113,10 @@ class _$_AsyncStateinitial<T> implements _AsyncStateinitial<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_AsyncStateinitial<T>);
+        (other.runtimeType == runtimeType &&
+            other is _$AsyncStateinitialImpl<T>);
   }
 
   @override
@@ -197,29 +198,29 @@ class _$_AsyncStateinitial<T> implements _AsyncStateinitial<T> {
 }
 
 abstract class _AsyncStateinitial<T> implements AsyncState<T> {
-  const factory _AsyncStateinitial() = _$_AsyncStateinitial<T>;
+  const factory _AsyncStateinitial() = _$AsyncStateinitialImpl<T>;
 }
 
 /// @nodoc
-abstract class _$$_AsyncStateloadingCopyWith<T, $Res> {
-  factory _$$_AsyncStateloadingCopyWith(_$_AsyncStateloading<T> value,
-          $Res Function(_$_AsyncStateloading<T>) then) =
-      __$$_AsyncStateloadingCopyWithImpl<T, $Res>;
+abstract class _$$AsyncStateloadingImplCopyWith<T, $Res> {
+  factory _$$AsyncStateloadingImplCopyWith(_$AsyncStateloadingImpl<T> value,
+          $Res Function(_$AsyncStateloadingImpl<T>) then) =
+      __$$AsyncStateloadingImplCopyWithImpl<T, $Res>;
 }
 
 /// @nodoc
-class __$$_AsyncStateloadingCopyWithImpl<T, $Res>
-    extends _$AsyncStateCopyWithImpl<T, $Res, _$_AsyncStateloading<T>>
-    implements _$$_AsyncStateloadingCopyWith<T, $Res> {
-  __$$_AsyncStateloadingCopyWithImpl(_$_AsyncStateloading<T> _value,
-      $Res Function(_$_AsyncStateloading<T>) _then)
+class __$$AsyncStateloadingImplCopyWithImpl<T, $Res>
+    extends _$AsyncStateCopyWithImpl<T, $Res, _$AsyncStateloadingImpl<T>>
+    implements _$$AsyncStateloadingImplCopyWith<T, $Res> {
+  __$$AsyncStateloadingImplCopyWithImpl(_$AsyncStateloadingImpl<T> _value,
+      $Res Function(_$AsyncStateloadingImpl<T>) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_AsyncStateloading<T> implements _AsyncStateloading<T> {
-  const _$_AsyncStateloading();
+class _$AsyncStateloadingImpl<T> implements _AsyncStateloading<T> {
+  const _$AsyncStateloadingImpl();
 
   @override
   String toString() {
@@ -227,9 +228,10 @@ class _$_AsyncStateloading<T> implements _AsyncStateloading<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_AsyncStateloading<T>);
+        (other.runtimeType == runtimeType &&
+            other is _$AsyncStateloadingImpl<T>);
   }
 
   @override
@@ -311,24 +313,24 @@ class _$_AsyncStateloading<T> implements _AsyncStateloading<T> {
 }
 
 abstract class _AsyncStateloading<T> implements AsyncState<T> {
-  const factory _AsyncStateloading() = _$_AsyncStateloading<T>;
+  const factory _AsyncStateloading() = _$AsyncStateloadingImpl<T>;
 }
 
 /// @nodoc
-abstract class _$$_AsyncStateloadedCopyWith<T, $Res> {
-  factory _$$_AsyncStateloadedCopyWith(_$_AsyncStateloaded<T> value,
-          $Res Function(_$_AsyncStateloaded<T>) then) =
-      __$$_AsyncStateloadedCopyWithImpl<T, $Res>;
+abstract class _$$AsyncStateloadedImplCopyWith<T, $Res> {
+  factory _$$AsyncStateloadedImplCopyWith(_$AsyncStateloadedImpl<T> value,
+          $Res Function(_$AsyncStateloadedImpl<T>) then) =
+      __$$AsyncStateloadedImplCopyWithImpl<T, $Res>;
   @useResult
   $Res call({T data});
 }
 
 /// @nodoc
-class __$$_AsyncStateloadedCopyWithImpl<T, $Res>
-    extends _$AsyncStateCopyWithImpl<T, $Res, _$_AsyncStateloaded<T>>
-    implements _$$_AsyncStateloadedCopyWith<T, $Res> {
-  __$$_AsyncStateloadedCopyWithImpl(_$_AsyncStateloaded<T> _value,
-      $Res Function(_$_AsyncStateloaded<T>) _then)
+class __$$AsyncStateloadedImplCopyWithImpl<T, $Res>
+    extends _$AsyncStateCopyWithImpl<T, $Res, _$AsyncStateloadedImpl<T>>
+    implements _$$AsyncStateloadedImplCopyWith<T, $Res> {
+  __$$AsyncStateloadedImplCopyWithImpl(_$AsyncStateloadedImpl<T> _value,
+      $Res Function(_$AsyncStateloadedImpl<T>) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -336,7 +338,7 @@ class __$$_AsyncStateloadedCopyWithImpl<T, $Res>
   $Res call({
     Object? data = freezed,
   }) {
-    return _then(_$_AsyncStateloaded<T>(
+    return _then(_$AsyncStateloadedImpl<T>(
       data: freezed == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
@@ -347,8 +349,8 @@ class __$$_AsyncStateloadedCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$_AsyncStateloaded<T> implements _AsyncStateloaded<T> {
-  const _$_AsyncStateloaded({required this.data});
+class _$AsyncStateloadedImpl<T> implements _AsyncStateloaded<T> {
+  const _$AsyncStateloadedImpl({required this.data});
 
   @override
   final T data;
@@ -359,10 +361,10 @@ class _$_AsyncStateloaded<T> implements _AsyncStateloaded<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AsyncStateloaded<T> &&
+            other is _$AsyncStateloadedImpl<T> &&
             const DeepCollectionEquality().equals(other.data, data));
   }
 
@@ -373,8 +375,8 @@ class _$_AsyncStateloaded<T> implements _AsyncStateloaded<T> {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AsyncStateloadedCopyWith<T, _$_AsyncStateloaded<T>> get copyWith =>
-      __$$_AsyncStateloadedCopyWithImpl<T, _$_AsyncStateloaded<T>>(
+  _$$AsyncStateloadedImplCopyWith<T, _$AsyncStateloadedImpl<T>> get copyWith =>
+      __$$AsyncStateloadedImplCopyWithImpl<T, _$AsyncStateloadedImpl<T>>(
           this, _$identity);
 
   @override
@@ -454,29 +456,29 @@ class _$_AsyncStateloaded<T> implements _AsyncStateloaded<T> {
 
 abstract class _AsyncStateloaded<T> implements AsyncState<T> {
   const factory _AsyncStateloaded({required final T data}) =
-      _$_AsyncStateloaded<T>;
+      _$AsyncStateloadedImpl<T>;
 
   T get data;
   @JsonKey(ignore: true)
-  _$$_AsyncStateloadedCopyWith<T, _$_AsyncStateloaded<T>> get copyWith =>
+  _$$AsyncStateloadedImplCopyWith<T, _$AsyncStateloadedImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_AsyncStateerrorCopyWith<T, $Res> {
-  factory _$$_AsyncStateerrorCopyWith(_$_AsyncStateerror<T> value,
-          $Res Function(_$_AsyncStateerror<T>) then) =
-      __$$_AsyncStateerrorCopyWithImpl<T, $Res>;
+abstract class _$$AsyncStateerrorImplCopyWith<T, $Res> {
+  factory _$$AsyncStateerrorImplCopyWith(_$AsyncStateerrorImpl<T> value,
+          $Res Function(_$AsyncStateerrorImpl<T>) then) =
+      __$$AsyncStateerrorImplCopyWithImpl<T, $Res>;
   @useResult
   $Res call({String error});
 }
 
 /// @nodoc
-class __$$_AsyncStateerrorCopyWithImpl<T, $Res>
-    extends _$AsyncStateCopyWithImpl<T, $Res, _$_AsyncStateerror<T>>
-    implements _$$_AsyncStateerrorCopyWith<T, $Res> {
-  __$$_AsyncStateerrorCopyWithImpl(
-      _$_AsyncStateerror<T> _value, $Res Function(_$_AsyncStateerror<T>) _then)
+class __$$AsyncStateerrorImplCopyWithImpl<T, $Res>
+    extends _$AsyncStateCopyWithImpl<T, $Res, _$AsyncStateerrorImpl<T>>
+    implements _$$AsyncStateerrorImplCopyWith<T, $Res> {
+  __$$AsyncStateerrorImplCopyWithImpl(_$AsyncStateerrorImpl<T> _value,
+      $Res Function(_$AsyncStateerrorImpl<T>) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -484,7 +486,7 @@ class __$$_AsyncStateerrorCopyWithImpl<T, $Res>
   $Res call({
     Object? error = null,
   }) {
-    return _then(_$_AsyncStateerror<T>(
+    return _then(_$AsyncStateerrorImpl<T>(
       error: null == error
           ? _value.error
           : error // ignore: cast_nullable_to_non_nullable
@@ -495,8 +497,8 @@ class __$$_AsyncStateerrorCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$_AsyncStateerror<T> implements _AsyncStateerror<T> {
-  const _$_AsyncStateerror({required this.error});
+class _$AsyncStateerrorImpl<T> implements _AsyncStateerror<T> {
+  const _$AsyncStateerrorImpl({required this.error});
 
   @override
   final String error;
@@ -507,10 +509,10 @@ class _$_AsyncStateerror<T> implements _AsyncStateerror<T> {
   }
 
   @override
-  bool operator ==(dynamic other) {
+  bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AsyncStateerror<T> &&
+            other is _$AsyncStateerrorImpl<T> &&
             (identical(other.error, error) || other.error == error));
   }
 
@@ -520,8 +522,8 @@ class _$_AsyncStateerror<T> implements _AsyncStateerror<T> {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AsyncStateerrorCopyWith<T, _$_AsyncStateerror<T>> get copyWith =>
-      __$$_AsyncStateerrorCopyWithImpl<T, _$_AsyncStateerror<T>>(
+  _$$AsyncStateerrorImplCopyWith<T, _$AsyncStateerrorImpl<T>> get copyWith =>
+      __$$AsyncStateerrorImplCopyWithImpl<T, _$AsyncStateerrorImpl<T>>(
           this, _$identity);
 
   @override
@@ -601,10 +603,10 @@ class _$_AsyncStateerror<T> implements _AsyncStateerror<T> {
 
 abstract class _AsyncStateerror<T> implements AsyncState<T> {
   const factory _AsyncStateerror({required final String error}) =
-      _$_AsyncStateerror<T>;
+      _$AsyncStateerrorImpl<T>;
 
   String get error;
   @JsonKey(ignore: true)
-  _$$_AsyncStateerrorCopyWith<T, _$_AsyncStateerror<T>> get copyWith =>
+  _$$AsyncStateerrorImplCopyWith<T, _$AsyncStateerrorImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
