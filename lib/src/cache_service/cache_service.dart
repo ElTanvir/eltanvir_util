@@ -5,7 +5,7 @@ part 'cache_service_impl.dart';
 ///[CacheService] is the base class for [CacheServiceImpl]
 abstract class CacheService {
   ///init the cache service
-  Future<void> init();
+  Future<void> init({required String appName});
 
   ///is the user logged in?
   ///returns bool

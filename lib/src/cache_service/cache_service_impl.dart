@@ -8,17 +8,16 @@ class CacheServiceImpl implements CacheService {
   ///Box for storing data
   late Box<dynamic> box;
 
-  // TODO: Change this to your app name
-  static const String _boxName = 'App Name';
+
   static const String _isLoggedIn = 'isLoggedIn';
   static const String _bearerToken = 'bearerToken';
   static const String _refreshToken = 'refreshToken';
   static const String _fcmToken = 'fcmToken';
 
   @override
-  Future<void> init() async {
+  Future<void> init({required String appName}) async {
     await Hive.initFlutter();
-    box = await Hive.openBox(_boxName);
+    box = await Hive.openBox(appName);
   }
 
   @override
