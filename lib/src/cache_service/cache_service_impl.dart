@@ -8,7 +8,6 @@ class CacheServiceImpl implements CacheService {
   ///Box for storing data
   late Box<dynamic> box;
 
-
   static const String _isLoggedIn = 'isLoggedIn';
   static const String _bearerToken = 'bearerToken';
   static const String _refreshToken = 'refreshToken';
@@ -22,38 +21,38 @@ class CacheServiceImpl implements CacheService {
 
   @override
   Future<bool> get isLoggedIn async =>
-      await _read(_isLoggedIn) as bool? ?? false;
+      await read(_isLoggedIn) as bool? ?? false;
 
   @override
   Future<void> setLoggedIn({required bool value}) async =>
-      _save(_isLoggedIn, value);
+      save(_isLoggedIn, value);
 
   @override
-  Future<String?> get bearerToken async => await _read(_bearerToken) as String?;
+  Future<String?> get bearerToken async => await read(_bearerToken) as String?;
 
   @override
-  Future<void> setBearerToken(String value) async => _save(_bearerToken, value);
+  Future<void> setBearerToken(String value) async => save(_bearerToken, value);
 
   @override
-  Future<String?> get refreshToken async => _read(_refreshToken) as String?;
+  Future<String?> get refreshToken async => read(_refreshToken) as String?;
 
   @override
   Future<void> setRefreshToken(String value) async =>
-      _save(_refreshToken, value);
+      save(_refreshToken, value);
 
   @override
-  Future<String?> get fcmToken async => await _read(_fcmToken) as String?;
+  Future<String?> get fcmToken async => await read(_fcmToken) as String?;
 
   @override
-  Future<void> setFcmToken(String value) async => _save(_fcmToken, value);
+  Future<void> setFcmToken(String value) async => save(_fcmToken, value);
 
   @override
   Future<void> delete(String key) async => box.delete(key);
 
   @override
   Future<void> deleteAll() async => box.clear();
-
-  Future<void> _save(String key, dynamic value) async => box.put(key, value);
-
-  Future<dynamic> _read(String key) async => box.get(key);
+  @override
+  Future<void> save(String key, dynamic value) async => box.put(key, value);
+  @override
+  Future<dynamic> read(String key) async => box.get(key);
 }

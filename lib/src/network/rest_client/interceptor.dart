@@ -1,5 +1,4 @@
-import 'package:dio/dio.dart';
-import 'package:flutter_app_utils/src/cache_service/cache_service.dart';
+part of'rest_client.dart';
 
 ///Dynamic Dio Interceptor
 ///Cancels Protected API calls if the user is not logged in

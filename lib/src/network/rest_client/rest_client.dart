@@ -2,10 +2,11 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_app_utils/src/network/rest_client/interceptor.dart';
+import 'package:flutter_app_utils/src/cache_service/cache_service.dart';
 import 'package:flutter_app_utils/src/network/utils/pretty_dio_logger.dart';
 
 part 'api_options.dart';
+part 'interceptor.dart';
 
 ///Rest Client for API calls
 class RestClient {

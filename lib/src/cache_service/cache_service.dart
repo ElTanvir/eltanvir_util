@@ -37,4 +37,9 @@ abstract class CacheService {
 
   ///delete all keys
   Future<void> deleteAll();
+  ///save a key value pair
+  Future<void> save(String key, dynamic value);
+  ///read a key value pair
+  Future<dynamic> read(String key);
+  
 }

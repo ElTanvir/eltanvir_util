@@ -6,4 +6,5 @@ export 'src/extensions/eltanvir_util.dart';
 export 'src/extensions/media_qurey_extensions.dart';
 export 'src/extensions/navigation.dart';
 export 'src/extensions/response_extension.dart';
+export 'src/network/rest_client/rest_client.dart';
 export 'src/network/utils/network_exceptions.dart';
